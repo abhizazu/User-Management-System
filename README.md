@@ -2,5 +2,5 @@
 Operating system: RED HAT LINUX ENTERPRISE(RHLE)
 <OL>
   <li> SSH Connection Between Linux system and GitHub</li>
-  <img src="./asset/SSH.png" alt=" SSH connection image">
+  <img src="./assets/SSH.png" alt=" SSH connection image">
 </OL>
