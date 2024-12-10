@@ -5,6 +5,9 @@ Operating system: RED HAT LINUX ENTERPRISE(RHLE)
   <img src="./assets/SSH.png" height="100" width="200" alt=" SSH connection image">
   <hr>
 <li> File structure</li>
-  <img src="./assets/SSH.png" height="100" width="200" alt=" SSH connection image">
+  <img src="./assets/File.jpg" height="100" width="200" alt=" SSH connection image">
 <li> login page --><a href="index.php">index.php</a></li>
+<li> Dashboard page --><a href="dashboard.php">dashboard.php</a></li>
+  <li>Profile page --><a href="profile.php">profile.php</a></li>
+  <li>Logout page --><a href="logout.php">logout.php</a></li>
 </OL>
