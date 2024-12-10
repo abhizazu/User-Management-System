@@ -4,23 +4,19 @@ include 'includes/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
 
-    $sql = "SELECT * FROM users WHERE email='$email'";
+    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result = $conn->query($sql);
 
+    if (!$result) {
+        die("SQL Error: " . $conn->error);
+    }
+
     if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        if (password_verify($password, $row['password'])) {
-            $_SESSION['user_id'] = $row['id'];
-            $_SESSION['role'] = $row['role'];
-            header("Location: dashboard.php");
-            exit;
-        } else {
-            echo "Invalid password.";
-        }
+        echo "Login successful!";
     } else {
-        echo "No user found with this email.";
+        echo "Invalid email or password.";
     }
 }
 ?>
