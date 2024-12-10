@@ -1,0 +1,180 @@
+Dec 09 14:12:38 localhost.localdomain systemd[1]: Starting MariaDB 10.5 database server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 259.[0m
+Dec 09 14:12:38 localhost.localdomain mariadb-check-socket[922]: Socket file /var/lib/mysql/mysql.sock exists.
+Dec 09 14:12:38 localhost.localdomain mariadb-check-socket[922]: No process is using /var/lib/mysql/mysql.sock, which means it is a garbage, so it will be removed automatically.
+Dec 09 14:12:38 localhost.localdomain mariadb-prepare-db-dir[992]: Database MariaDB is probably initialized in /var/lib/mysql already, nothing is done.
+Dec 09 14:12:38 localhost.localdomain mariadb-prepare-db-dir[992]: If this is not the case, make sure the /var/lib/mysql is empty before running mariadb-prepare-db-dir.
+Dec 09 14:12:38 localhost.localdomain systemd[1]: Started MariaDB 10.5 database server.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 259.[0m
+Dec 10 11:23:42 localhost.localdomain systemd[1]: Stopping MariaDB 10.5 database server...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mariadb.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mariadb.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5791.[0m
+Dec 10 11:23:42 localhost.localdomain systemd[1]: mariadb.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mariadb.service has successfully entered the 'dead' state.[0m
+Dec 10 11:23:42 localhost.localdomain systemd[1]: Stopped MariaDB 10.5 database server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mariadb.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mariadb.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5791 and the job result is done.[0m
+Dec 10 11:23:42 localhost.localdomain systemd[1]: mariadb.service: Consumed 5.114s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mariadb.service completed and consumed the indicated resources.[0m
+Dec 10 11:24:48 localhost.localdomain systemd[1]: Starting MariaDB 10.5 database server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5792.[0m
+Dec 10 11:24:48 localhost.localdomain mariadb-check-socket[5227]: Socket file /var/lib/mysql/mysql.sock exists.
+Dec 10 11:24:48 localhost.localdomain mariadb-check-socket[5227]: Is another MariaDB daemon already running with the same unix socket?
+Dec 10 11:24:48 localhost.localdomain mariadb-check-socket[5227]: Please, stop the process using the socket /var/lib/mysql/mysql.sock or remove the file manually to start the service.
+Dec 10 11:24:48 localhost.localdomain systemd[1]: [0;1;39m[0;1;31m[0;1;39mmariadb.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit mariadb.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+Dec 10 11:24:48 localhost.localdomain systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmariadb.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mariadb.service has entered the 'failed' state with result 'exit-code'.[0m
+Dec 10 11:24:48 localhost.localdomain systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MariaDB 10.5 database server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5792 and the job result is failed.[0m
+Dec 10 11:29:37 localhost.localdomain systemd[1]: Starting MariaDB 10.5 database server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5906.[0m
+Dec 10 11:29:37 localhost.localdomain mariadb-check-socket[5331]: Socket file /var/lib/mysql/mysql.sock exists.
+Dec 10 11:29:37 localhost.localdomain mariadb-check-socket[5331]: Is another MariaDB daemon already running with the same unix socket?
+Dec 10 11:29:37 localhost.localdomain mariadb-check-socket[5331]: Please, stop the process using the socket /var/lib/mysql/mysql.sock or remove the file manually to start the service.
+Dec 10 11:29:37 localhost.localdomain systemd[1]: [0;1;39m[0;1;31m[0;1;39mmariadb.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit mariadb.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+Dec 10 11:29:37 localhost.localdomain systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmariadb.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mariadb.service has entered the 'failed' state with result 'exit-code'.[0m
+Dec 10 11:29:37 localhost.localdomain systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MariaDB 10.5 database server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5906 and the job result is failed.[0m
+Dec 10 11:29:56 localhost.localdomain systemd[1]: Starting MariaDB 10.5 database server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 6135.[0m
+Dec 10 11:29:56 localhost.localdomain mariadb-check-socket[5379]: Socket file /var/lib/mysql/mysql.sock exists.
+Dec 10 11:29:56 localhost.localdomain mariadb-check-socket[5379]: Is another MariaDB daemon already running with the same unix socket?
+Dec 10 11:29:56 localhost.localdomain mariadb-check-socket[5379]: Please, stop the process using the socket /var/lib/mysql/mysql.sock or remove the file manually to start the service.
+Dec 10 11:29:56 localhost.localdomain systemd[1]: [0;1;39m[0;1;31m[0;1;39mmariadb.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit mariadb.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+Dec 10 11:29:56 localhost.localdomain systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmariadb.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mariadb.service has entered the 'failed' state with result 'exit-code'.[0m
+Dec 10 11:29:56 localhost.localdomain systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MariaDB 10.5 database server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 6135 and the job result is failed.[0m
+Dec 10 11:30:42 localhost.localdomain systemd[1]: Starting MariaDB 10.5 database server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 6249.[0m
+Dec 10 11:30:42 localhost.localdomain mariadb-check-socket[5428]: Socket file /var/lib/mysql/mysql.sock exists.
+Dec 10 11:30:42 localhost.localdomain mariadb-check-socket[5428]: Is another MariaDB daemon already running with the same unix socket?
+Dec 10 11:30:42 localhost.localdomain mariadb-check-socket[5428]: Please, stop the process using the socket /var/lib/mysql/mysql.sock or remove the file manually to start the service.
+Dec 10 11:30:42 localhost.localdomain systemd[1]: [0;1;39m[0;1;31m[0;1;39mmariadb.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStartPre= process belonging to unit mariadb.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+Dec 10 11:30:42 localhost.localdomain systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmariadb.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mariadb.service has entered the 'failed' state with result 'exit-code'.[0m
+Dec 10 11:30:42 localhost.localdomain systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MariaDB 10.5 database server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mariadb.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://access.redhat.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mariadb.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 6249 and the job result is failed.[0m
