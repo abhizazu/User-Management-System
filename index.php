@@ -4,9 +4,9 @@ include 'includes/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$email = $_POST ['email'];
-	$password = $_POST['password'];
+	$password = md5($_POST['password']);
 
-	$sql = "SELECT  * FROM users WHERE email='$email'";
+	$sql = "SELECT  * FROM users WHERE email='$email' AND password='$password'";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows> 0){
@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		$_SESSION['user_id'] = $row['id'];
 		$_SESSION['role'] = $row['role'];
 		header("Location: dashboard.php");
+		exit;
 	}else {
 		echo "Invalid password.";
 	}
