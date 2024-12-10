@@ -14,5 +14,6 @@ $user = $result->fetch_assoc();
 
 echo "<h1>Welcome, {$user['username']}</h1>";
 echo "<p>Email: {$user['email']}</p>";
+echo "<a href ='logout.php'>Logout</a>";
 ?>
 
