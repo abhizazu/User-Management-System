@@ -9,15 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$sql = "SELECT  * FROM users WHERE email='$email' AND password='$password'";
 	$result = $conn->query($sql);
 
-	if ($result->num_rows> 0){
-		$row = $result->fetch_assoc();
-		$_SESSION['user_id'] = $row['id'];
-		$_SESSION['role'] = $row['role'];
-		header("Location: dashboard.php");
-		exit;
-	}else {
-		echo "Invalid password.";
-	}
+	if (password_verify($_POST['password'], $row['password'])) {
+    $_SESSION['user_id'] = $row['id'];
+    $_SESSION['role'] = $row['role'];
+    header("Location: dashboard.php");
+    exit;
+} else {
+    echo "Invalid password.";
+}
 } else {
 	echo "No user found with this email.";
 }
