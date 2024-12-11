@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 session_start();
-include 'db.php'; // Ensure the database file path is correct
+include 'includes/db.php'; // Ensure the database file path is correct
 
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
