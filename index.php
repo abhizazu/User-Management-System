@@ -1,40 +1,26 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 session_start();
 include 'includes/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
-    $password = md5($_POST['password']); // Hashing the password
+    $password = $_POST['password'];
 
-    // Prepared statement to prevent SQL injection
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
-    $stmt->bind_param("ss", $email, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $sql = "SELECT * FROM users WHERE email='$email'";
+    $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        $_SESSION['user_id'] = $row['id'];
-        $_SESSION['role'] = $row['role'];
-
-        // Redirect to dashboard
-        header("Location: dashboard.php");
-        exit;
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['role'] = $row['role'];
+            header("Location: dashboard.php");
+        } else {
+            echo "Invalid password.";
+        }
     } else {
-        echo "Invalid email or password.";
+        echo "No user found with this email.";
     }
-} 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Code for handling form submission
-} else {
-        echo "<p style='color: red;'>Invalid email or password.</p>";
-    }
-} else {
-    echo "<p style='color: red;'>Invalid request.</p>";
 }
 ?>
 
@@ -42,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <form method="POST" action="index.php">

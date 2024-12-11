@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
-    $sql = "INSERT INTO users (username, email, password, role) VALUES ('$username', '$email', '$password', 'user')";
+    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
     if ($conn->query($sql) === TRUE) {
         echo "User registered successfully.";
     } else {
@@ -14,17 +14,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
 <head>
     <title>Register</title>
 </head>
 <body>
-<form method="POST" action="register.php">
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <button type="submit">Register</button>
-</form>
+    <form method="POST" action="register.php">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
 </body>
 </html>
