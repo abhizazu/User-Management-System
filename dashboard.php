@@ -2,7 +2,8 @@
 session_start();
 include 'includes/db.php';
 
-if ($_SESSION['role'] != 'admin') {
+// Check if the user is logged in and has the 'admin' role
+if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
     header("Location: profile.php");
     exit;
 }
@@ -10,7 +11,7 @@ if ($_SESSION['role'] != 'admin') {
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
 
-echo "<h1>User Management</h1>";
+echo "<h1>Admin Dashboard</h1>";
 echo "<table border='1'>
 <tr>
     <th>ID</th>
@@ -34,3 +35,5 @@ while ($row = $result->fetch_assoc()) {
 }
 echo "</table>";
 ?>
+
+<a href="logout.php">Logout</a>
