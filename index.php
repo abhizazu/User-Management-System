@@ -23,8 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Invalid email or password.";
     }
+} 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Code for handling form submission
 } else {
-    echo "Invalid request.";
+        echo "<p style='color: red;'>Invalid email or password.</p>";
+    }
+} else {
+    echo "<p style='color: red;'>Invalid request.</p>";
 }
 ?>
 
