@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
+<link rel="style" href="./assets/style.css">
 </head>
 <body>
     <form method="POST" action="index.php">
